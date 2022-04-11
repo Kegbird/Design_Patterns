@@ -1,3 +1,5 @@
+# Builder
+
 Builder pattern can be used when:
 
 - The objects you have to build have way too many parameters.

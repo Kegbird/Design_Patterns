@@ -1,3 +1,5 @@
+# Abstract factory
+
 Abstract factory pattern can be used when:
 
 - You want to hide the creation and representation of a set of products

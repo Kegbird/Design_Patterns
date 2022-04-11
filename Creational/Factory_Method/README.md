@@ -1,3 +1,5 @@
+# Factory method
+
 Factory method can be used when:
 
 - You have to provide an interface to build many objects, but you still don't know how many classes you will need.
