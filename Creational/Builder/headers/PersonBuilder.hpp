@@ -1,16 +1,23 @@
 #pragma once
 #include<string>
-#include <ctime>
-#include <cstdlib>
 #include<iostream>
 #include"Person.hpp"
 
 class PersonBuilder
 {
     public:
-        PersonBuilder();
-        Person* BuildBully(std::string name, int age);
-        Person* BuildNerd(std::string name, int age);
-        Person* BuildWarrior(std::string name, int age);
-        Person* BuildNinja(std::string name, int age);
+        void SetName(std::string name);
+        void SetAge(int age);
+        void SetStrength(int strength);
+        void SetHeight(int height);
+        void SetKnowledge(int knowledge);
+        void SetSpeed(int speed);
+        Person* Build();
+    private:
+        std::string name;
+        int age;
+        int strength;
+        int height;
+        int knowledge;
+        int speed;
 };

@@ -2,21 +2,26 @@
 
 int main(int argc, const char * argv[])
 {
-    std::cout<<"\nBuilder pattern stupid example\n"<<std::endl;
+    std::cout<<"\nBuilder pattern stupid example"<<std::endl;
     PersonBuilder* builder = new PersonBuilder();
 
-    Person* nerd = builder->BuildNerd("Morty", 17);
-    Person* ninja = builder->BuildNinja("Genji", 32);
-    Person* warrior = builder->BuildWarrior("Aatrox", 400);
-    Person* bully = builder->BuildBully("Jackson", 15);
-    std::cout << "Print nerd description\n" << std::endl;
-    nerd->Describe();
-    std::cout << "Print ninja description\n" << std::endl;
-    ninja->Describe();
-    std::cout << "Print warrior description\n" << std::endl;
-    warrior->Describe();
-    std::cout << "Print bully description\n" << std::endl;
-    bully->Describe();
+    builder->SetName("Morty");
+    builder->SetAge(15);
+    builder->SetKnowledge(14);
+    builder->SetSpeed(40);
+    builder->SetStrength(5);
+    builder->SetHeight(2);
+    Person* morty = builder->Build();
+    morty->Describe();
+
+    builder->SetName("Rick");
+    builder->SetAge(56);
+    builder->SetKnowledge(999);
+    builder->SetSpeed(20);
+    builder->SetStrength(40);
+    builder->SetHeight(2);
+    Person* rick = builder->Build();
+    rick->Describe();
 
     return 0;
 }

@@ -1,50 +1,37 @@
 #include"headers/PersonBuilder.hpp"
 
-PersonBuilder::PersonBuilder()
+void PersonBuilder::SetName(std::string name)
 {
-    srand(time(NULL));
+    this->name=name;
 }
 
-Person* PersonBuilder::BuildBully(std::string name, int age)
+void PersonBuilder::SetAge(int age)
 {
-    //A bully is by default high, dumb, strong and fast.
-    int strength=(rand()%6)+5;
-    int height=(rand()%4)+7;
-    int knowledge=0;
-    int speed=(rand()%6)+5;
-    Person* bully = new Person(name, age, strength, height, knowledge, speed);
-    return bully;
+    this->age=age;
 }
 
-Person* PersonBuilder::BuildWarrior(std::string name, int age)
+void PersonBuilder::SetHeight(int height)
 {
-    //A warrior is bu default  tall, strong, fast, but not really smart.
-    int strength=(rand()%11)+10;
-    int height=(rand()%11)+10;
-    int knowledge=rand()%6;
-    int speed=(rand()%11)+10;
-    Person* warrior = new Person(name, age, strength, height, knowledge, speed);
-    return warrior;
+    this->height=height;
 }
 
-Person* PersonBuilder::BuildNinja(std::string name, int age)
+void PersonBuilder::SetKnowledge(int knowledge)
 {
-    //A ninja is by default small, smart, very fast, and strong.
-    int strength=(rand()%11)+10;
-    int height=(rand()%4)+2;
-    int knowledge=(rand()%11)+10;
-    int speed=999;
-    Person* ninja = new Person(name, age, strength, height, knowledge, speed);
-    return ninja;
+    this->knowledge=knowledge;
 }
 
-Person* PersonBuilder::BuildNerd(std::string name, int age)
+void PersonBuilder::SetSpeed(int speed)
 {
-    //A nerd is by default very smart, small, weak and slow.
-    int strength=0;
-    int height=(rand()%4)+2;
-    int knowledge=999;
-    int speed=0;
-    Person* nerd = new Person(name, age, strength, height, knowledge, speed);
-    return nerd;
+    this->speed=speed;
+}
+
+void PersonBuilder::SetStrength(int strength)
+{
+    this->strength=strength;
+}
+
+Person* PersonBuilder::Build()
+{
+    Person* person = new Person(name, age, strength, height, knowledge, speed);
+    return person;
 }
