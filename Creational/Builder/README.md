@@ -1,4 +1,4 @@
-# Builder
+# Builder Pattern
 
 Builder pattern can be used when:
 
