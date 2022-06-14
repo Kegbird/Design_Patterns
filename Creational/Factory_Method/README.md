@@ -1,4 +1,4 @@
-# Factory method
+# Factory method pattern
 
 Factory method can be used when:
 
