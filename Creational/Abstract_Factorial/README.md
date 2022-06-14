@@ -1,4 +1,4 @@
-# Abstract factory
+# Abstract factory pattern
 
 Abstract factory pattern can be used when:
 
