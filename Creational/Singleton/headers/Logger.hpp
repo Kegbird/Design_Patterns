@@ -4,12 +4,13 @@
 
 class Logger
 {
+friend class EnhancedLogger;
 private:
     Logger();
     static Logger* instance;
 public:
     Logger(Logger &other) = delete;
     void operator=(const Logger &) = delete;
-    void Log(std::string message);
+    void virtual Log(std::string message);
     static Logger *GetInstance();
 };

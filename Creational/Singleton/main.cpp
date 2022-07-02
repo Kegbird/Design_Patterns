@@ -1,4 +1,5 @@
-#include "headers/Logger.h"
+#include "headers/Logger.hpp"
+#include "headers/EnhancedLogger.hpp"
 
 int main(int argc, const char* argv[])
 {
@@ -6,4 +7,7 @@ int main(int argc, const char* argv[])
     Logger* logger = Logger::GetInstance();
     logger->Log("LOG: Useless log!");
     delete logger;
+    Logger* enahnced_logger = EnhancedLogger::GetInstance();
+    enahnced_logger->Log("LOG 2: Useless log!");
+    delete enahnced_logger;
 }

@@ -1,8 +1,11 @@
-#include"headers/Logger.h"
+#include"headers/Logger.hpp"
 
 Logger* Logger::instance= nullptr;
 
-Logger::Logger() {};
+Logger::Logger() 
+{
+    std::cout<< "Logger created!" << std::endl;
+}
 
 Logger *Logger::GetInstance()
 {
