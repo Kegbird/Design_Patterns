@@ -9,10 +9,10 @@ void ProductC::Use()
 {
     if(deluxe)
     {
-        std::cout << "This is a deluxe ProductC " << this->name << ".\n" << std::endl;
+        std::cout << "This is a deluxe ProductC " << this->name << std::endl;
     }
     else
     {
-        std::cout << "This is a poor ProductC " << this->name << ".\n" << std::endl;
+        std::cout << "This is a poor ProductC " << this->name << std::endl;
     }
 }

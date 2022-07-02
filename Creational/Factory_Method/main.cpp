@@ -13,4 +13,9 @@ int main(int argc, char* argv[])
     cat->Speak();
     dog->Speak();
     chinchilla->Speak();
+
+    delete cat;
+    delete dog;
+    delete chinchilla;
+    delete animalFactory;
 }

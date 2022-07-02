@@ -21,5 +21,5 @@ void Robot::ExecuteConfiguration()
 {
     std::cout << this->name << " executes its configuration." << std::endl;
     this->configuration->ExecuteConfiguration();
-    std::cout << "Task completed\n" << std::endl;
+    std::cout << "Task completed" << std::endl;
 }

@@ -23,5 +23,9 @@ int main(int argc, const char * argv[])
     Person* rick = builder->Build();
     rick->Describe();
 
+    delete rick;
+    delete morty;
+    delete builder;
+
     return 0;
 }

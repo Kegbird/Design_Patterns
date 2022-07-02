@@ -13,6 +13,7 @@ class PersonBuilder
         void SetKnowledge(int knowledge);
         void SetSpeed(int speed);
         Person* Build();
+        virtual ~PersonBuilder() = default;
     private:
         std::string name;
         int age;

@@ -21,6 +21,10 @@ int main(int argc, const char * argv[])
     b->Use();
     c->Use();
 
+    delete a;
+    delete b;
+    delete c;
+
     a=factory->CreateProductA(rich_factory);
     b=factory->CreateProductB(rich_factory);
     c=factory->CreateProductC(rich_factory);
@@ -29,5 +33,10 @@ int main(int argc, const char * argv[])
     b->Use();
     c->Use();
 
-    return 0;
+    delete a;
+    delete b;
+    delete c;
+    delete factory;
+    delete poor_factory;
+    delete rich_factory;
 }
