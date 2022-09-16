@@ -39,4 +39,10 @@ int main(int argc, const char * argv[])
 
     std::cout << "\nPhef! What a work, let's turn off the oven!"<<std::endl;
     oven->TurnOff();
+
+    delete oven;
+    delete bread;
+    delete pizza;
+    delete croissant;
+    return 0;
 }
