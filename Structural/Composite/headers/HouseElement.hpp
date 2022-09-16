@@ -6,12 +6,13 @@
 class HouseElement
 {
     public:
+        HouseElement();
         HouseElement(std::string element_name);
-        virtual void AddElement() = 0;
-        virtual void RemoveElement(HouseElement* element) = 0;
-        virtual void Clean() = 0;
-        virtual ~HouseElement();
-    private:
+        virtual void AddElement(HouseElement* element);
+        virtual bool RemoveElement(HouseElement* element);
+        virtual void Clean();
+        ~HouseElement();
         std::string element_name;
+    private:
         std::vector<HouseElement*> elements;
 };
