@@ -6,13 +6,13 @@
 #include "Chinchilla.hpp"
 
 enum AnimalEnum {
-    catEnum,
-    dogEnum,
-    chinchillaEnum,
+    CAT,
+    DOG,
+    CHINCHILLA,
 };
 
 class AnimalFactory
 {
 public:
-    Animal* CreateAnimal(AnimalEnum animalId, std::string name);
+    Animal* CreateAnimal(AnimalEnum animal_id, std::string name);
 };

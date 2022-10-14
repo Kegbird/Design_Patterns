@@ -1,13 +1,13 @@
 #include "headers/AnimalFactory.hpp"
 
-Animal* AnimalFactory::CreateAnimal(AnimalEnum animalId, std::string name)
+Animal* AnimalFactory::CreateAnimal(AnimalEnum animal_id, std::string name)
 {
-    switch (animalId)
+    switch (animal_id)
     {
-    case catEnum:
+    case CAT:
         return new Cat(name);
         break;
-    case dogEnum:
+    case DOG:
         return new Dog(name);
         break;
     default:
