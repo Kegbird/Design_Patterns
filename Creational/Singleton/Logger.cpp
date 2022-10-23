@@ -19,3 +19,9 @@ void Logger::Log(std::string message)
 {
     std::cout<<message<<std::endl;
 }
+
+void Logger::Delete()
+{
+    delete Logger::instance;
+    Logger::instance = nullptr;
+}

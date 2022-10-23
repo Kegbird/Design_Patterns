@@ -13,4 +13,5 @@ public:
     void operator=(const Logger &) = delete;
     void virtual Log(std::string message);
     static Logger *GetInstance();
+    void Delete();
 };
