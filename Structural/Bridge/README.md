@@ -1,6 +1,6 @@
 # Bridge pattern
 
-Bridge pattern can be used when:
+The bridge pattern can be used when:
 
 - You want to share the implemetion of a class among multiple objects.
 - When you would like to extend the class hierarchy, but there are too many subclasses to write.

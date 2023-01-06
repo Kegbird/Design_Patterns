@@ -1,6 +1,6 @@
 # Abstract factory pattern
 
-Abstract factory pattern can be used when:
+The abstract factory pattern can be used when:
 
 - You want to hide the creation and representation of a set of products.
 - When you have many classes with a common interface.

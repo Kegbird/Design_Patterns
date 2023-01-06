@@ -1,6 +1,6 @@
 # Adapter pattern
 
-Adapter pattern can be used when:
+The adapter pattern can be used when:
 
 - You want to use an existing class, but its interface does not match the one you need.
 - You need a reusable class that deal with unrelated classes.

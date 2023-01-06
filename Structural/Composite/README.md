@@ -1,6 +1,6 @@
 # Composite pattern
 
-Composite pattern can be useful when there is a hierarchy of parts in your problem, each one that can be used indipendently from the others.
+The composite pattern can be useful when there is a hierarchy of parts in your problem, each one that can be used indipendently from the others.
 
 In this example, the hierarchy is structured with 3 classes: House, Room and Furniture, all subclasses of HouseElement.
 Each instance of HouseElement can contains other HouseElement.

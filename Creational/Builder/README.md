@@ -1,6 +1,6 @@
 # Builder pattern
 
-Builder pattern can be used when:
+The builder pattern can be used when:
 
 - When you want to provide an interface to build objects parameter by parameter.
 - When you want to limit the control over the construction phase.

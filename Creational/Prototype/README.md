@@ -1,6 +1,6 @@
 # Prototype pattern
 
-Prototype pattern can be used when:
+The prototype pattern can be used when:
 
 - You have a template objects that you would like to replicate.
 - The objects you want to create have a limited set of possible states.

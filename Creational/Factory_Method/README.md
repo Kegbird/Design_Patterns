@@ -1,6 +1,6 @@
 # Factory method pattern
 
-Factory method can be used when:
+The factory method can be used when:
 
 - You have to provide an interface to build many objects, but you still don't know how many classes you will need.
 - You want to specialize a class to build objects according to a given parameter.
