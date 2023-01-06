@@ -14,3 +14,5 @@ The flyweight pattern can be used when:
 - Your application relies on a large amount of objects (many of them represent the same concept).
 - Many of them don't need to be identify.
 - Memory costs are so high to impact significatively the performance of your application.
+
+In this simple example, flyweight objects are colored character built through a character factory. Each character is cached inside the character factory, so there is a reuse of character instances.
