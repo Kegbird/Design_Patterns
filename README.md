@@ -3,5 +3,6 @@ This repository contains all well known coding design patterns: for each pattern
 
 - [Creational](https://github.com/Kegbird/design_patterns/tree/main/Creational)
 - [Structural](https://github.com/Kegbird/design_patterns/tree/main/Structural)
+- [Object_Behavioral](https://github.com/Kegbird/design_patterns/tree/main/Object_Behavioral)
 
 The repository is currently work in progress and most of these implementations are written based on the gang of four book.
