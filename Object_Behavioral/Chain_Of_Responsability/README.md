@@ -1,4 +1,4 @@
-# Facade pattern
+# Chain of responsability pattern
 
 The chain of responsability pattern comes handy in processes that handles a request, which must be checked/processed
 multiple times (perhaps with a different logic, depending by the request itself).
